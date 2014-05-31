@@ -1,0 +1,34 @@
+[
+{
+    "fields": {
+        "meaning": "Z",
+        "lem": 3
+    },
+    "model": "common.meaning",
+    "pk": 4
+},
+{
+    "fields": {
+        "meaning": "im munde bewahren",
+        "lem": 4
+    },
+    "model": "common.meaning",
+    "pk": 5
+},
+{
+    "fields": {
+        "graphs": "Z",
+        "pinyin": "z\u00e1n"
+    },
+    "model": "common.lem",
+    "pk": 3
+},
+{
+    "fields": {
+        "graphs": "\u542b",
+        "pinyin": "h\u00e1n"
+    },
+    "model": "common.lem",
+    "pk": 4
+}
+]
