@@ -1,4 +1,3 @@
 Datenbank
 =========
-* Loaddata (Django command)
-
+* Unicode; collation
