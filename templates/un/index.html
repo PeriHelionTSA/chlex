@@ -1,0 +1,23 @@
+{% extends 'un/base.html' %}
+
+{% block content %}
+<table class="table table-hover">
+<thead>
+<tr>
+<th>Graph</th>
+<th>Pinyin</th>
+<th>Comment</th>
+</tr>
+</thead>
+
+<tbody>
+{% for l in lemmata %}
+<tr>
+<td>{{ l.graphs }}</td>
+<td>{{ l.pinyin }}</td>
+<td>{{ l.comment }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endblock %}
