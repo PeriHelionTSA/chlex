@@ -82,7 +82,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-
+STATIC_ROOT = 'static_root'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/dev/howto/static-files/
 
