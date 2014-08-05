@@ -13,9 +13,15 @@
 <tbody>
 {% for l in lemmata %}
 <tr>
-<td>{{ l.graphs }}</td>
+<td>
+<a href="/r/{{ l.graphs }}">{{ l.graphs }}</a>
+</td>
 <td>{{ l.pinyin }}</td>
-<td>{{ l.comment }}</td>
+<td>
+{% if l.comment %}
+{{ l.comment }}
+{% endif %}
+</td>
 </tr>
 {% endfor %}
 </tbody>

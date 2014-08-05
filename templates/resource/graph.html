@@ -2,8 +2,8 @@
 
 {% block content %}
 <h1>graph</h1>
-<p>
-Todo
-</p>
+{% for l in lemmata %}
+{{l.graphs}},{{l.pinyin}},{{l.comment}}
+{% endfor %}
 {% endblock %}
 

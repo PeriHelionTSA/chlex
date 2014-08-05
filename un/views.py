@@ -13,3 +13,10 @@ def about(request):
 
 def contact(request):
     return render(request, 'un/contact.html')
+
+def r_graph(request, graph):
+    from common.models import Meaning
+
+    #qs = Meaning.objects.filter(graphs=graph)
+    qs = Lem.objects.filter(graphs=graph)
+    return render(request, 'resource/graph.html', {'lemmata': qs})

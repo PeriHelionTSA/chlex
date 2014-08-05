@@ -7,6 +7,7 @@ class Meaning(models.Model):
 
 
 class Lem(models.Model):
+    # TODO: renaming graphs to graph
     graphs = models.CharField(max_length=5000)
     pinyin = models.CharField(max_length=5000)
     comment = models.CharField(max_length=5000, null=True, blank=True)
