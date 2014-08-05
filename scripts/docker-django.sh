@@ -2,8 +2,8 @@
 # Django container
 #
 
-docker kill chlex
-docker rm chlex
+docker kill chlex-django
+docker rm chlex-django
 
 docker build -t 0xffea/chlex-django - <<EOL
 FROM ubuntu:14.04
@@ -29,4 +29,4 @@ EXPOSE 8010
 CMD python manage.py syncdb ; python manage.py runserver 0.0.0.0:8001
 EOL
 
-docker run -d -p 8010:8010 --name chlex --link postgres:db -v /docker:/docker:rw -t 0xffea/chlex-django
+docker run -d -p 8010:8010 --name chlex-django --link postgres:db -v /docker:/docker:rw -t 0xffea/chlex-django
